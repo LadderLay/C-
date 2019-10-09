@@ -1,12 +1,7 @@
 #include <stdio.h>
+#include "head.h"
 #define MAXSIZE 20
 
-#define OK 1
-#define ERROR 0
-#define TRUE 1
-#define FALSE 0
-
-typedef int Status;
 typedef int ElemType;//此处以int类型为例
 
 typedef struct
