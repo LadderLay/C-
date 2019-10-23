@@ -62,8 +62,20 @@ void InsertSort(SqList *L)
         if(L->r[i]<L->r[i-1]){
             L->r[0]=L->r[i];//设置哨兵
             for(j=i-1;L->r[j]>L->r[0];j--)
-                L->r[j+1]=L->r[j];
+                L->r[j+1]=L->r[j];//记录后移
             L->r[j+1]=L->r[0];
+        }
+    }
+}
+
+void ShellSort(SqList *L)
+{
+    int i,j;
+    int increment=L->length;
+    do{
+        increment=increment/3+1;
+        for(i=increment+1;i<=L->length;i++){
+
         }
     }
 }
